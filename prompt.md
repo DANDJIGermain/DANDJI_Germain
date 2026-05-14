@@ -1,0 +1,5 @@
+je veux qu'on travail sur la parti categorie jje que que les catecore soir des filtre et non des ficher ou on va clique on va faire de categorie comme les site ecommece par ce que personnelement moi j'ai epitech le barchelor et a epitech il y'a plusieurs domaine que j'ai fais notament tek1 tek2 tek3 pour le bachelor et en dehors de sa epitech j'ai des projet personnelle aussi les projet d'entreprse et les projet de client donc deja on va commencer pas vider le dosier qui sont la pour moi si je viens je vois deja des projet de chaque categorie et a cote comme un sidebar sur la page categorie il aura epitech et les autre  
+en suitte dans la navabr on complete Technologies 
+-----
+pour les filtres la je pense qu'on va pas laisser icon de dossier j'aimerais bien qu'on mettes des icone en rapport avec les categorie en question par exemple pour epitech on met l'icone de epitech et pour les autre projet on met des icone en rapport avec les projet 
+en suite c'est dans epitech il y a tek1 tek2 tek3 et eip tu comprend si oui on va commencer pas parler des projet de tek1

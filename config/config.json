@@ -1,0 +1,60 @@
+{
+  "site": {
+    "title": "Germain DANDJI",
+    "base_url": "/",
+    "favicon": "/images/logo.favicon.png",
+    "logo": "/images/logotype-remo.png",
+    "logo_white": "/images/logotype-remo.png",
+    "logo_width": "160",
+    "logo_height": "80",
+    "logo_text": ""
+  },
+  "settings": {
+    "theme_switcher": true,
+    "default_theme": "system",
+    "pagination": 6,
+    "InnerPaginationOptions": {
+      "enableTop": false,
+      "enableBottom": true
+    },
+    "summary_length": 200,
+    "blog_folder": "posts"
+  },
+  "params": {
+    "tag_manager_id": "",
+    "footer_content": "Portfolio personnel de Germain DANDJI. Développeur passionné par la création d'expériences numériques uniques.",
+    "copyright": "Conçu et Développé par Germain DANDJI | 2026"
+  },
+  "metadata": {
+    "meta_author": "Germain DANDJI",
+    "meta_image": "/images/og-image.png",
+    "meta_description": "Portfolio personnel de Germain DANDJI - Développeur Web"
+  },
+  "widgets": {
+    "about": {
+      "enable": true,
+      "content": "Bonjour ! Je suis Germain DANDJI, un développeur passionné. Bienvenue sur mon portfolio où je partage mes projets et mes découvertes."
+    },
+    "featured_posts": {
+      "enable": true,
+      "title": "Projets à la une",
+      "showPost": 3
+    },
+    "categories": {
+      "enable": true,
+      "title": "Catégories"
+    },
+    "newsletter": {
+      "enable": false,
+      "title": "Newsletter",
+      "content": "Rejoignez ma newsletter pour être tenu informé de mes derniers projets !",
+      "privacy_policy_page": "/privacy-policy",
+      "mailchimp_url": ""
+    }
+  },
+  "disqus": {
+    "enable": false,
+    "shortname": "themefisher-template",
+    "settings": {}
+  }
+}

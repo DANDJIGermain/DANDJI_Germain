@@ -1,0 +1,46 @@
+{
+  "main": [
+    {
+      "name": "Accueil",
+      "url": "/"
+    },
+    {
+      "name": "A propos",
+      "url": "/about"
+    },
+    {
+      "name": "Mes Projets",
+      "url": "/categories"
+    },
+    {
+      "name": "Mes Technologies",
+      "url": "/technologies"
+    },
+    {
+      "name": "Contact",
+      "url": "/contact"
+    }
+  ],
+  "footer": [
+    {
+      "name": "Accueil",
+      "url": "/"
+    },
+    {
+      "name": "A propos",
+      "url": "/about"
+    },
+    {
+      "name": "Mes Projets",
+      "url": "/categories"
+    },
+    {
+      "name": "Mes Technologies",
+      "url": "/technologies"
+    },
+    {
+      "name": "Contact",
+      "url": "/contact"
+    }
+  ]
+}
