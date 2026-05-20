@@ -6,7 +6,7 @@
   "license": "UNLICENSED",
   "homepage": "https://themewagon.github.io/geeky-nextjs",
   "scripts": {
-    "dev": "node lib/jsonGenerator.js && next dev",
+    "dev": "node lib/jsonGenerator.js && next dev -p 3001",
     "build": "node lib/jsonGenerator.js && next build",
     "export": "npm run build && next export",
     "lint": "next lint",

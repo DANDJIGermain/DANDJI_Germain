@@ -1,7 +1,5 @@
 
-const isProd = process.env.NODE_ENV === "production";
-
-const basePath = isProd ? "/geeky-nextjs" : "";
+const basePath = process.env.BASE_PATH || "";
 
 const nextConfig = {
   basePath,
