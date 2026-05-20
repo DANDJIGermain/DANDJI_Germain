@@ -13,7 +13,7 @@ banner:
 
 featured_posts:
   enable: true
-  title: Projets à la une
+  title: Mes projets phares
 
 promotion:
   enable: false
