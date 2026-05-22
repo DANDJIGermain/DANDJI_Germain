@@ -9,7 +9,7 @@ import { MDXRemote } from "next-mdx-remote";
 import { useTheme } from "next-themes";
 import Link from "next/link";
 import { useState } from "react";
-import { FaRegCalendar, FaUserAlt, FaArrowLeft, FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import { FaRegCalendar, FaUserAlt, FaArrowLeft, FaChevronLeft, FaChevronRight, FaExternalLinkAlt } from "react-icons/fa";
 import shortcodes from "./shortcodes/all";
 const { disqus } = config;
 const { meta_author } = config.metadata;
@@ -54,13 +54,25 @@ const PostSingle = ({
                   {gallery && gallery.length > 0 ? (
                     /* Interactive Image Slider */
                     <div className="relative h-[250px] sm:h-[480px] w-full">
-                      <ImageFallback
-                        src={gallery[currentSlide]}
-                        height={600}
-                        width={1000}
-                        alt={`${title} - Slide ${currentSlide + 1}`}
-                        className="w-full h-full object-cover transition-all duration-500 ease-in-out"
-                      />
+                      {frontmatter.link ? (
+                        <a href={frontmatter.link} target="_blank" rel="noopener noreferrer" className="block w-full h-full cursor-pointer">
+                          <ImageFallback
+                            src={gallery[currentSlide]}
+                            height={600}
+                            width={1000}
+                            alt={`${title} - Slide ${currentSlide + 1}`}
+                            className="w-full h-full object-cover hover:opacity-95 transition-opacity duration-500 ease-in-out"
+                          />
+                        </a>
+                      ) : (
+                        <ImageFallback
+                          src={gallery[currentSlide]}
+                          height={600}
+                          width={1000}
+                          alt={`${title} - Slide ${currentSlide + 1}`}
+                          className="w-full h-full object-cover transition-all duration-500 ease-in-out"
+                        />
+                      )}
                       
                       {/* Left Arrow */}
                       <button
@@ -70,7 +82,7 @@ const PostSingle = ({
                       >
                         <FaChevronLeft size={16} />
                       </button>
-
+ 
                       {/* Right Arrow */}
                       <button
                         onClick={() => setCurrentSlide((prev) => (prev === gallery.length - 1 ? 0 : prev + 1))}
@@ -79,7 +91,7 @@ const PostSingle = ({
                       >
                         <FaChevronRight size={16} />
                       </button>
-
+ 
                       {/* Indicator Dots */}
                       <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex space-x-2 bg-black/30 px-3 py-1.5 rounded-full backdrop-blur-sm z-10">
                         {gallery.map((_, index) => (
@@ -97,13 +109,25 @@ const PostSingle = ({
                   ) : (
                     /* Default Static Image */
                     image && (
-                      <ImageFallback
-                        src={image}
-                        height="500"
-                        width="1000"
-                        alt={title}
-                        className="w-full h-auto object-cover"
-                      />
+                      frontmatter.link ? (
+                        <a href={frontmatter.link} target="_blank" rel="noopener noreferrer" className="block cursor-pointer">
+                          <ImageFallback
+                            src={image}
+                            height="500"
+                            width="1000"
+                            alt={title}
+                            className="w-full h-auto object-cover hover:opacity-95 transition-opacity"
+                          />
+                        </a>
+                      ) : (
+                        <ImageFallback
+                          src={image}
+                          height="500"
+                          width="1000"
+                          alt={title}
+                          className="w-full h-auto object-cover"
+                        />
+                      )
                     )
                   )}
 
@@ -154,6 +178,19 @@ const PostSingle = ({
                       <span className="bg-theme-light dark:bg-darkmode-theme-light text-primary px-2.5 py-0.5 rounded text-xs font-semibold tracking-wider">
                         {categories[0]}
                       </span>
+                    </li>
+                  )}
+                  {frontmatter.link && (
+                    <li className="inline-flex items-center">
+                      <a
+                        href={frontmatter.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center text-primary dark:text-darkmode-primary hover:underline text-xs font-bold font-secondary leading-3"
+                      >
+                        <FaExternalLinkAlt className="mr-1.5" />
+                        Visiter le projet
+                      </a>
                     </li>
                   )}
                 </ul>

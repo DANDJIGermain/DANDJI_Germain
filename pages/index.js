@@ -25,6 +25,9 @@ const Home = ({
   const featuredPosts = sortPostByDate.filter(
     (post) => post.frontmatter.featured
   );
+  const recentPosts = sortPostByDate.filter(
+    (post) => !post.frontmatter.featured
+  );
   const showPosts = pagination;
 
   return (
@@ -114,7 +117,7 @@ const Home = ({
                   {markdownify(recent_posts.title, "h2", "section-title")}
                   <div className="rounded border border-border px-6 pt-6 dark:border-darkmode-border">
                     <div className="row">
-                      {sortPostByDate.slice(0, 4).map((post) => (
+                      {recentPosts.slice(0, 4).map((post) => (
                         <div className="mb-8 md:col-6" key={post.slug}>
                           <Post post={post} />
                         </div>

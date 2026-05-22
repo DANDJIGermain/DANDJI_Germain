@@ -3,7 +3,7 @@ title: "My Marvin - Automatisation CI/CD avec Jenkins"
 date: 2025-02-01T10:00:00Z
 image: /images/post/post-10.png
 categories: ["DevOps & Infrastructure", "Automatisation"]
-featured: true
+featured: false
 draft: false
 ---
 

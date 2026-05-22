@@ -3,7 +3,7 @@ title: "Octopus - Gestion de Configuration avec Ansible"
 date: 2025-03-01T10:00:00Z
 image: /images/post/post-1.png
 categories: ["DevOps & Infrastructure", "Administration Système"]
-featured: true
+featured: false
 draft: false
 ---
 

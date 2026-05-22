@@ -3,7 +3,7 @@ title: "MyRPG - Création d'un Jeu de Rôle (RPG) en C"
 date: 2024-07-15T10:00:00Z
 image: /images/post/post-2.png
 categories: ["Jeux Vidéo", "Programmation Système"]
-featured: true
+featured: false
 draft: false
 ---
 

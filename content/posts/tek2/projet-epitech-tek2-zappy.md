@@ -3,7 +3,7 @@ title: "Zappy - Jeu Multijoueur Réseau & IA"
 date: 2024-11-01T10:00:00Z
 image: /images/post/post-8.png
 categories: ["Réseau & Cybersécurité", "Intelligence Artificielle"]
-featured: true
+featured: false
 draft: false
 ---
 

@@ -53,6 +53,22 @@ export const getStaticPaths = async () => {
 export const getStaticProps = async ({ params }) => {
   const { regular } = params;
   const allPages = await getRegularPage(regular);
+
+  // Check if certificate images exist at build time to provide seamless fallback rendering
+  if (regular === "about" && allPages?.frontmatter?.certificates?.list) {
+    const fs = require("fs");
+    const path = require("path");
+    allPages.frontmatter.certificates.list = allPages.frontmatter.certificates.list.map(cert => {
+      if (cert.image) {
+        const fullPath = path.join(process.cwd(), "public", cert.image);
+        if (!fs.existsSync(fullPath)) {
+          return { ...cert, image: "" };
+        }
+      }
+      return cert;
+    });
+  }
+
   return {
     props: {
       slug: regular,

@@ -3,7 +3,7 @@ title: "Arcade - Plateforme de Jeux Rétro Extensible"
 date: 2024-10-01T10:00:00Z
 image: /images/post/post-7.png
 categories: ["Architecture Logicielle & POO", "Jeux Vidéo"]
-featured: true
+featured: false
 draft: false
 ---
 

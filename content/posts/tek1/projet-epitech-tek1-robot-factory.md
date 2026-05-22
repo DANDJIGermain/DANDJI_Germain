@@ -3,7 +3,7 @@ title: "Robot Factory (Corewar) - Création d'un Assembleur en C"
 date: 2024-08-01T10:00:00Z
 image: /images/post/post-3.png
 categories: ["Programmation Système", "Compilation"]
-featured: true
+featured: false
 draft: false
 ---
 

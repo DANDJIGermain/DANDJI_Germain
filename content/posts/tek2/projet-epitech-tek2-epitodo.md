@@ -3,7 +3,7 @@ title: "Epitodo - Application Web Full-Stack"
 date: 2024-06-01T10:00:00Z
 image: /images/post/post-3.png
 categories: ["Développement Web Full-Stack"]
-featured: true
+featured: false
 draft: false
 ---
 

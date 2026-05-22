@@ -1,6 +1,6 @@
 ---
 title: "Système de Feedback Passagers en Temps Réel"
-date: 2026-05-20T16:00:00Z
+date: 2026-05-22T13:00:00Z
 duration: "08 Avril - 10 Mai 2026"
 image: /images/post/post-4.png
 categories: ["Projets d'Entreprise"]

@@ -3,7 +3,7 @@ title: "Jetpack - Jeu Réseau Multijoueur"
 date: 2025-01-01T10:00:00Z
 image: /images/post/post-4.png
 categories: ["Réseau & Cybersécurité", "Programmation C++"]
-featured: true
+featured: false
 draft: false
 ---
 

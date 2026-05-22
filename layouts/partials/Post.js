@@ -13,13 +13,27 @@ const Post = ({ post }) => {
     <div className="post">
       <div className="relative">
         {post.frontmatter.image && (
-          <ImageFallback
-            className="rounded"
-            src={post.frontmatter.image}
-            alt={post.frontmatter.title}
-            width={405}
-            height={208}
-          />
+          post.frontmatter.link ? (
+            <a href={post.frontmatter.link} target="_blank" rel="noopener noreferrer" className="block cursor-pointer">
+              <ImageFallback
+                className="rounded hover:opacity-90 transition-opacity"
+                src={post.frontmatter.image}
+                alt={post.frontmatter.title}
+                width={405}
+                height={208}
+              />
+            </a>
+          ) : (
+            <Link href={`/${blog_folder}/${post.slug}`} className="block">
+              <ImageFallback
+                className="rounded hover:opacity-90 transition-opacity"
+                src={post.frontmatter.image}
+                alt={post.frontmatter.title}
+                width={405}
+                height={208}
+              />
+            </Link>
+          )
         )}
         <ul className="absolute top-3 left-2 flex flex-wrap items-center">
           {post.frontmatter.categories.map((tag, index) => (

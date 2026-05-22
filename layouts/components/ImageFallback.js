@@ -6,9 +6,9 @@ const ImageFallback = (props) => {
 
   // For static export with basePath, prepend the basePath to relative image paths
   const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
-  const processedSrc = src.startsWith("/") && !src.startsWith("//") && !src.startsWith("http")
+  const processedSrc = src && typeof src === "string" && src.startsWith("/") && !src.startsWith("//") && !src.startsWith("http")
     ? `${basePath}${src}`
-    : src;
+    : src || "";
 
   const [imgSrc, setImgSrc] = useState(processedSrc);
 
