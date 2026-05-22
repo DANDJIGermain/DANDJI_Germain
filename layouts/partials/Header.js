@@ -33,10 +33,11 @@ const Header = () => {
   return (
     <header className="header">
       <nav className="navbar container px-1 sm:px-8">
-        <div className="order-0">
-          <Logo />
-        </div>
-        <div className="flex items-center space-x-4 xl:space-x-8">
+        {/* Left side: Logo and Nav Menu side-by-side */}
+        <div className="flex items-center lg:space-x-12">
+          <div className="order-0">
+            <Logo />
+          </div>
           <div
             className={`collapse-menu ${
               !showMenu && "translate-x-full"
@@ -111,11 +112,15 @@ const Header = () => {
               ))}
             </ul>
             {/* header social */}
-            <div className="flex items-center">
+            <div className="flex items-center lg:ml-4">
               <Social source={socical} className="socials" />
               <LanguageSwitcher />
             </div>
           </div>
+        </div>
+
+        {/* Right side: Utilities (theme, search, mobile toggle) */}
+        <div className="flex items-center space-x-4">
           <ThemeSwitcher />
           {/* Header search */}
           <div

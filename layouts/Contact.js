@@ -99,7 +99,7 @@ const Contact = ({ data }) => {
         </div>
         <div className="row">
           {phone && (
-            <div className="md:col-6 lg:col-4">
+            <div className="md:col-6 lg:col-6">
               <Link
                 href={`tel:${phone}`}
                 className="my-4 flex h-[100px] items-center justify-center
@@ -113,7 +113,7 @@ const Contact = ({ data }) => {
             </div>
           )}
           {mail && (
-            <div className="md:col-6 lg:col-4">
+            <div className="md:col-6 lg:col-6">
               <Link
                 href={`mailto:${mail}`}
                 className="my-4 flex h-[100px] items-center justify-center

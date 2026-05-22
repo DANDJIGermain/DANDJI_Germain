@@ -3,7 +3,7 @@ title: "Parlons </br> de vous"
 description: "Contactez-moi pour toute demande de projet ou d'information"
 phone: "+229 01 94 94 21 46"
 mail: "germaindandji04@gmail.com"
-location: "Afrique/Bénin/Cotonou"
+location: ""
 form_action: "#"
 layout: "contact"
 addresses:
@@ -13,8 +13,6 @@ addresses:
   - icon: FaEnvelope
     content: germaindandji04@gmail.com
     link: mailto:germaindandji04@gmail.com
-  - icon: FaMapMarkerAlt
-    content: "Bénin, Cotonou"
 
 draft: false
 ---

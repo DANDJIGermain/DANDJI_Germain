@@ -57,7 +57,7 @@ const Post = ({ post }) => {
         </li>
         <li className="inline-flex items-center font-secondary text-xs leading-3">
           <FaRegCalendar className="mr-1.5" />
-          {dateFormat(post.frontmatter.date)}
+          {post.frontmatter.duration ? post.frontmatter.duration : dateFormat(post.frontmatter.date)}
         </li>
       </ul>
       <p>{plainify(post.content).replace(/^Présentation\s*/i, "").slice(0, Number(summary_length))}...</p>

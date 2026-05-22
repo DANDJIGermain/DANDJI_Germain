@@ -1,6 +1,5 @@
 import config from "@config/config.json";
 import Base from "@layouts/Baseof";
-import Sidebar from "@layouts/partials/Sidebar";
 import { getSinglePage } from "@lib/contentParser";
 import { getTaxonomy } from "@lib/taxonomyParser";
 import { slugify } from "@lib/utils/textConverter";
@@ -20,7 +19,7 @@ const Category = ({ postsByCategories, category, posts, categories }) => {
             </span>
           </h1>
           <div className="row">
-            <div className="lg:col-8">
+            <div className="lg:col-12">
               <div className="row rounded border border-border p-4 px-3 dark:border-darkmode-border lg:p-6">
                 {postsByCategories.map((post, i) => (
                   <div key={`key-${i}`} className="col-12 mb-8 sm:col-6">
@@ -29,7 +28,7 @@ const Category = ({ postsByCategories, category, posts, categories }) => {
                 ))}
               </div>
             </div>
-            <Sidebar posts={posts} categories={categories} />
+
           </div>
         </div>
       </div>

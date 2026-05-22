@@ -3,7 +3,6 @@ import Base from "@layouts/Baseof";
 import ImageFallback from "@layouts/components/ImageFallback";
 import Pagination from "@layouts/components/Pagination";
 import Post from "@layouts/partials/Post";
-import Sidebar from "@layouts/partials/Sidebar";
 import { getListPage, getSinglePage } from "@lib/contentParser";
 import { getTaxonomy } from "@lib/taxonomyParser";
 import dateFormat from "@lib/utils/dateFormat";
@@ -79,54 +78,19 @@ const Home = ({
       <section className="section">
         <div className="container">
           <div className="row items-start">
-            <div className="mb-12 lg:mb-0 lg:col-8">
+            <div className="mb-12 lg:mb-0 lg:col-12">
               {/* Featured posts */}
               {featured_posts.enable && (
                 <div className="section">
                   {markdownify(featured_posts.title, "h2", "section-title")}
-                  <div className="rounded border border-border p-6 dark:border-darkmode-border">
-                    <div className="row">
-                      <div className="md:col-6">
-                        <Post post={featuredPosts[0]} />
+                  <div className="row">
+                    {featuredPosts.slice(0, 2).map((post) => (
+                      <div className="mb-8 md:col-6" key={post.slug}>
+                        <div className="rounded border border-border p-6 dark:border-darkmode-border h-full hover:shadow-md transition-all duration-300">
+                          <Post post={post} />
+                        </div>
                       </div>
-                      <div className="scrollbar-w-[10px] mt-8 max-h-[480px] scrollbar-thin scrollbar-track-gray-100 scrollbar-thumb-border dark:scrollbar-track-gray-800 dark:scrollbar-thumb-darkmode-theme-dark md:mt-0 md:col-6">
-                        {featuredPosts
-                          .slice(1, featuredPosts.length)
-                          .map((post, i, arr) => (
-                            <div
-                              className={`mb-6 flex items-center pb-6 ${
-                                i !== arr.length - 1 &&
-                                "border-b border-border dark:border-darkmode-border"
-                              }`}
-                              key={`key-${i}`}
-                            >
-                              {post.frontmatter.image && (
-                                <ImageFallback
-                                  className="mr-3 h-[85px] rounded object-cover"
-                                  src={post.frontmatter.image}
-                                  alt={post.frontmatter.title}
-                                  width={105}
-                                  height={85}
-                                />
-                              )}
-                              <div>
-                                <h3 className="h5 mb-2">
-                                  <Link
-                                    href={`/${blog_folder}/${post.slug}`}
-                                    className="block hover:text-primary"
-                                  >
-                                    {post.frontmatter.title}
-                                  </Link>
-                                </h3>
-                                <p className="inline-flex items-center font-bold">
-                                  <FaRegCalendar className="mr-1.5" />
-                                  {dateFormat(post.frontmatter.date)}
-                                </p>
-                              </div>
-                            </div>
-                          ))}
-                      </div>
-                    </div>
+                    ))}
                   </div>
                 </div>
               )}
@@ -150,7 +114,7 @@ const Home = ({
                   {markdownify(recent_posts.title, "h2", "section-title")}
                   <div className="rounded border border-border px-6 pt-6 dark:border-darkmode-border">
                     <div className="row">
-                      {sortPostByDate.slice(0, showPosts).map((post) => (
+                      {sortPostByDate.slice(0, 4).map((post) => (
                         <div className="mb-8 md:col-6" key={post.slug}>
                           <Post post={post} />
                         </div>
@@ -160,17 +124,16 @@ const Home = ({
                 </div>
               )}
 
-              <Pagination
-                totalPages={Math.ceil(posts.length / showPosts)}
-                currentPage={1}
-              />
+              <div className="text-center mt-8">
+                <Link
+                  className="btn btn-primary px-8 py-3 rounded-lg shadow hover:shadow-lg transition-all"
+                  href="/categories"
+                >
+                  Voir tous mes projets
+                </Link>
+              </div>
             </div>
-            {/* sidebar */}
-            <Sidebar
-              className={"lg:mt-[9.5rem]"}
-              posts={posts}
-              categories={categories}
-            />
+
           </div>
         </div>
       </section>
