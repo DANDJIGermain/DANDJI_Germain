@@ -112,10 +112,22 @@ layout: default
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ansible/ansible-original.svg" alt="Ansible" className="w-16 h-16 drop-shadow-md" />
   </div>
 
+  {/* n8n */}
+  <div className="flex flex-col items-center w-24 hover:scale-110 transition-transform duration-300">
+    <span className="text-xs font-bold mb-3 tracking-wider text-gray-600 dark:text-gray-300">n8n</span>
+    <img src="https://cdn.simpleicons.org/n8n/FF6C37" alt="n8n" className="w-16 h-16 drop-shadow-md" />
+  </div>
+
   {/* Docker */}
   <div className="flex flex-col items-center w-24 hover:scale-110 transition-transform duration-300">
     <span className="text-xs font-bold mb-3 tracking-wider text-gray-600 dark:text-gray-300">Docker</span>
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" alt="Docker" className="w-16 h-16 drop-shadow-md" />
+  </div>
+
+  {/* Kubernetes */}
+  <div className="flex flex-col items-center w-24 hover:scale-110 transition-transform duration-300">
+    <span className="text-xs font-bold mb-3 tracking-wider text-gray-600 dark:text-gray-300">Kubernetes</span>
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kubernetes/kubernetes-original.svg" alt="Kubernetes" className="w-16 h-16 drop-shadow-md" />
   </div>
 
   {/* PostgreSQL */}
