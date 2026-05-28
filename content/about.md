@@ -1,6 +1,6 @@
 ---
 title: Germain DANDJI
-image: /images/author.png
+image: /images/germain_vide2.png
 description: "meta description"
 layout: about
 education:

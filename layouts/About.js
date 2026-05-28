@@ -75,16 +75,16 @@ const About = ({ data }) => {
   const { title, image, education, experience, certificates } = frontmatter;
 
   return (
-    <section className="section mt-16">
+    <section className="section pt-0 mt-8">
       <div className="container text-center">
         {image && (
-          <div className="mb-8">
+          <div className="mb-8 w-full">
             <ImageFallback
               src={image}
               width={1298}
-              height={616}
+              height={420}
               alt={title}
-              className="rounded-lg"
+              className="rounded-2xl w-full h-[420px] object-cover object-[center_40%] shadow-md border border-border dark:border-darkmode-border"
             />
           </div>
         )}
