@@ -165,4 +165,10 @@ layout: default
     <span className="text-xs font-bold mb-3 tracking-wider text-gray-600 dark:text-gray-300">GitHub</span>
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="GitHub" className="w-16 h-16 drop-shadow-md dark:invert" />
   </div>
+
+  {/* Go */}
+  <div className="flex flex-col items-center w-24 hover:scale-110 transition-transform duration-300">
+    <span className="text-xs font-bold mb-3 tracking-wider text-gray-600 dark:text-gray-300">Go</span>
+    <img src="https://cdn.simpleicons.org/go/00ADD8" alt="Go" className="w-16 h-16 drop-shadow-md" />
+  </div>
 </div>

@@ -59,13 +59,20 @@ export const getStaticProps = async ({ params }) => {
     const fs = require("fs");
     const path = require("path");
     allPages.frontmatter.certificates.list = allPages.frontmatter.certificates.list.map(cert => {
-      if (cert.image) {
+      let updatedCert = { ...cert };
+      if (cert.image && !cert.image.startsWith("http") && !cert.image.startsWith("//")) {
         const fullPath = path.join(process.cwd(), "public", cert.image);
         if (!fs.existsSync(fullPath)) {
-          return { ...cert, image: "" };
+          updatedCert.image = "";
         }
       }
-      return cert;
+      if (cert.image_back && !cert.image_back.startsWith("http") && !cert.image_back.startsWith("//")) {
+        const fullPath = path.join(process.cwd(), "public", cert.image_back);
+        if (!fs.existsSync(fullPath)) {
+          updatedCert.image_back = "";
+        }
+      }
+      return updatedCert;
     });
   }
 

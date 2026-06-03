@@ -413,8 +413,13 @@ const Social = ({ source, className }) => {
       )}
       {phone && (
         <li className="inline-block">
-          <a aria-label="telephone" href={`tel:${phone}`}>
-            <IoCall />
+          <a
+            aria-label="whatsapp"
+            href={`https://wa.me/${phone.replace(/[^0-9]/g, "")}`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <IoLogoWhatsapp />
           </a>
         </li>
       )}
