@@ -23,6 +23,13 @@ const Document = () => {
           media="(prefers-color-scheme: dark)"
           content="#000"
         />
+        {/* Google Search Console Verification */}
+        {config.params?.google_site_verification && (
+          <meta
+            name="google-site-verification"
+            content={config.params.google_site_verification}
+          />
+        )}
       </Head>
       <body>
         <Main />
