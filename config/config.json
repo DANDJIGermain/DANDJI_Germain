@@ -11,7 +11,7 @@
   },
   "settings": {
     "theme_switcher": true,
-    "default_theme": "system",
+    "default_theme": "light",
     "pagination": 6,
     "InnerPaginationOptions": {
       "enableTop": false,
