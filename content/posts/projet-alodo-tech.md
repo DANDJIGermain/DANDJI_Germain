@@ -3,7 +3,7 @@ title: "ALODO TECH — Plateforme Vitrine & Institutionnelle"
 date: 2026-05-22T11:00:00Z
 duration: "Avril - Mai 2026"
 image: /images/post/alodotech.png
-categories: ["Projets d'Entreprise"]
+categories: ["Développement"]
 featured: true
 draft: false
 link: "https://alodotech.com"

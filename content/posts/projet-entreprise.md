@@ -3,7 +3,7 @@ title: "Système de Feedback Passagers en Temps Réel"
 date: 2026-05-22T13:00:00Z
 duration: "08 Avril - 10 Mai 2026"
 image: /images/post/aeroport/aplication.png
-categories: ["Projets d'Entreprise"]
+categories: ["Développement"]
 featured: true
 draft: false
 gallery:
