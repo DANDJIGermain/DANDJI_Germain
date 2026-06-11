@@ -31,7 +31,7 @@ Grâce à des QR codes stratégiquement disposés dans les différentes zones de
 Pour réaliser ce projet, j'ai utilisé les technologies suivantes :
 
 * **Frontend** : Next.js / React / TypeScript
-* **Backend** : PHP
+* **Backend** : Laravel
 * **Base de données** : MySQL
 
 ## Fonctionnalités
