@@ -4,11 +4,9 @@ import socical from "@config/social.json";
 import Social from "@layouts/components/Social";
 import LanguageSwitcher from "@layouts/components/LanguageSwitcher";
 import ThemeSwitcher from "@layouts/components/ThemeSwitcher";
-import SearchModal from "@partials/SearchModal";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
-import { IoSearch } from "react-icons/io5";
 
 const Header = () => {
   // distructuring the main menu from menu object
@@ -114,23 +112,15 @@ const Header = () => {
             {/* header social */}
             <div className="flex items-center lg:ml-4">
               <Social source={socical} className="socials" />
-              <LanguageSwitcher />
             </div>
           </div>
         </div>
 
-        {/* Right side: Utilities (theme, search, mobile toggle) */}
+        {/* Right side: Utilities (theme, language, mobile toggle) */}
         <div className="flex items-center space-x-4">
           <ThemeSwitcher />
-          {/* Header search */}
-          <div
-            className="search-icon"
-            onClick={() => {
-              setSearchModal(true);
-            }}
-          >
-            <IoSearch />
-          </div>
+          {/* Language Switcher replaces Search */}
+          <LanguageSwitcher />
           <button
             onClick={() => setShowMenu(!showMenu)}
             className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-primary text-white lg:hidden"
@@ -151,11 +141,6 @@ const Header = () => {
             )}
           </button>
         </div>
-
-        <SearchModal
-          searchModal={searchModal}
-          setSearchModal={setSearchModal}
-        />
       </nav>
       {showMenu && (
         <div className="header-backdrop absolute top-0 left-0 h-[100vh] w-full bg-black/50 lg:hidden"></div>
