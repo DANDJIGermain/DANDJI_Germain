@@ -35,8 +35,11 @@ export default async function handler(req, res) {
     };
 
     messages.unshift(newMessage); // put new message at the top
-    fs.writeFileSync(contactsFilePath, JSON.stringify(messages, null, 2), 'utf-8');
-
+    try {
+      fs.writeFileSync(contactsFilePath, JSON.stringify(messages, null, 2), 'utf-8');
+    } catch (fsErr) {
+      console.warn("Could not save to contacts.json (expected on Vercel):", fsErr.message);
+    }
     // Attempt to send email via Gmail/SMTP
     const emailUser = process.env.EMAIL_USER;
     const emailPass = process.env.EMAIL_PASS;
