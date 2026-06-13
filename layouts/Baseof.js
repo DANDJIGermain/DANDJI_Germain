@@ -43,7 +43,7 @@ const Base = ({
         {/* meta-keywords for SEO */}
         <meta 
           name="keywords" 
-          content="Germain DANDJI, Ingénieur DevSecOps, Informatique, Développeur Web, Full-Stack, Flutter, Cybersécurité, CI/CD, DevOps, Bénin, Freelance" 
+          content="Germain DANDJI, Dandji Germain, Ingénieur DevSecOps, Entrepreneur Tech, Informatique, Développeur Web, Full-Stack, Flutter, Cybersécurité, CI/CD, DevOps, Bénin, Freelance" 
         />
 
         {/* author from config.json */}
