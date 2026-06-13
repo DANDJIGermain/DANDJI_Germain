@@ -1,6 +1,6 @@
 {
   "site": {
-    "title": "Germain DANDJI",
+    "title": "Germain DANDJI | Ingénieur DevSecOps",
     "base_url": "/",
     "favicon": "/images/logo.favicon.png",
     "logo": "/images/logotype-remo.png",
@@ -29,7 +29,7 @@
   "metadata": {
     "meta_author": "Germain DANDJI",
     "meta_image": "/images/og-image.png",
-    "meta_description": "Portfolio personnel de Germain DANDJI - Ingénieur DevSecOps"
+    "meta_description": "Portfolio officiel de Germain DANDJI. Ingénieur DevSecOps, Informatique, Développement Web et Mobile, Cloud, Cybersécurité et CI/CD."
   },
   "widgets": {
     "about": {

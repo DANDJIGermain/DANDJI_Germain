@@ -39,6 +39,12 @@ const Base = ({
           name="description"
           content={plainify(description ? description : meta_description)}
         />
+        
+        {/* meta-keywords for SEO */}
+        <meta 
+          name="keywords" 
+          content="Germain DANDJI, Ingénieur DevSecOps, Informatique, Développeur Web, Full-Stack, Flutter, Cybersécurité, CI/CD, DevOps, Bénin, Freelance" 
+        />
 
         {/* author from config.json */}
         <meta name="author" content={meta_author} />
