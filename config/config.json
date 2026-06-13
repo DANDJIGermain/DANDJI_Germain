@@ -23,18 +23,18 @@
   "params": {
     "tag_manager_id": "",
     "google_site_verification": "",
-    "footer_content": "Portfolio personnel de Germain DANDJI. Développeur passionné par la création d'expériences numériques uniques.",
+    "footer_content": "Portfolio personnel de Germain DANDJI. Ingénieur DevSecOps passionné par la création d'expériences numériques uniques.",
     "copyright": "Conçu et Développé par Germain DANDJI | 2026"
   },
   "metadata": {
     "meta_author": "Germain DANDJI",
     "meta_image": "/images/og-image.png",
-    "meta_description": "Portfolio personnel de Germain DANDJI - Développeur Web"
+    "meta_description": "Portfolio personnel de Germain DANDJI - Ingénieur DevSecOps"
   },
   "widgets": {
     "about": {
       "enable": true,
-      "content": "Bonjour ! Je suis Germain DANDJI, un développeur passionné. Bienvenue sur mon portfolio où je partage mes projets et mes découvertes."
+      "content": "Bonjour ! Je suis Germain DANDJI, Ingénieur DevSecOps. Bienvenue sur mon portfolio où je partage mes projets et mes découvertes."
     },
     "featured_posts": {
       "enable": true,

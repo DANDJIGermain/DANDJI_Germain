@@ -15,23 +15,27 @@ const Post = ({ post }) => {
         {post.frontmatter.image && (
           post.frontmatter.link ? (
             <a href={post.frontmatter.link} target="_blank" rel="noopener noreferrer" className="block cursor-pointer">
-              <ImageFallback
-                className="rounded hover:opacity-90 transition-opacity"
-                src={post.frontmatter.image}
-                alt={post.frontmatter.title}
-                width={405}
-                height={208}
-              />
+              <div className="w-full h-[208px] relative rounded overflow-hidden bg-gray-50 dark:bg-darkmode-theme-light border border-border dark:border-darkmode-border flex items-center justify-center">
+                <ImageFallback
+                  className="object-contain w-full h-full hover:opacity-90 transition-opacity"
+                  src={post.frontmatter.image}
+                  alt={post.frontmatter.title}
+                  width={405}
+                  height={208}
+                />
+              </div>
             </a>
           ) : (
             <Link href={`/${blog_folder}/${post.slug}`} className="block">
-              <ImageFallback
-                className="rounded hover:opacity-90 transition-opacity"
-                src={post.frontmatter.image}
-                alt={post.frontmatter.title}
-                width={405}
-                height={208}
-              />
+              <div className="w-full h-[208px] relative rounded overflow-hidden bg-gray-50 dark:bg-darkmode-theme-light border border-border dark:border-darkmode-border flex items-center justify-center">
+                <ImageFallback
+                  className="object-contain w-full h-full hover:opacity-90 transition-opacity"
+                  src={post.frontmatter.image}
+                  alt={post.frontmatter.title}
+                  width={405}
+                  height={208}
+                />
+              </div>
             </Link>
           )
         )}

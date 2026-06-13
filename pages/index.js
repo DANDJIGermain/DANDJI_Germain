@@ -9,7 +9,10 @@ import dateFormat from "@lib/utils/dateFormat";
 import { sortByDate } from "@lib/utils/sortFunctions";
 import { markdownify } from "@lib/utils/textConverter";
 import Link from "next/link";
+import dynamic from 'next/dynamic';
 import { FaRegCalendar } from "react-icons/fa";
+
+const IconCloud = dynamic(() => import('@layouts/components/IconCloud'), { ssr: false });
 const { blog_folder, pagination } = config.settings;
 
 const Home = ({
@@ -33,7 +36,7 @@ const Home = ({
   return (
     <Base>
       {/* Banner */}
-      <section className="section banner relative pb-0">
+      <section className="section banner relative pb-0 overflow-hidden">
         <ImageFallback
           className="absolute bottom-0 left-0 z-[-1] w-full"
           src={"/images/banner-bg-shape.svg"}
@@ -62,9 +65,12 @@ const Home = ({
               )}
             </div>
             {banner.image_enable && (
-                <div className="col-9 lg:col-6">
+                <div className="col-9 lg:col-6 relative">
+                  <div className="absolute inset-0 z-[-1] flex items-center justify-center opacity-30 dark:opacity-20 transform scale-150">
+                    <IconCloud />
+                  </div>
                   <ImageFallback
-                    className="mx-auto object-contain"
+                    className="mx-auto object-contain relative z-10"
                     src={banner.image}
                     width={548}
                     height={443}

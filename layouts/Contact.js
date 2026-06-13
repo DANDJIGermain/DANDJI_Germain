@@ -2,7 +2,7 @@ import { useState } from "react";
 import { markdownify } from "@lib/utils/textConverter";
 import Link from "next/link";
 import { BsArrowRightShort } from "react-icons/bs";
-import { FaEnvelope, FaMapMarkerAlt, FaUserAlt } from "react-icons/fa";
+import { FaEnvelope, FaMapMarkerAlt, FaWhatsapp } from "react-icons/fa";
 
 const Contact = ({ data }) => {
   const { frontmatter } = data;
@@ -173,11 +173,11 @@ const Contact = ({ data }) => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="my-4 flex h-[100px] items-center justify-center
-             rounded border border-border p-4 text-primary dark:border-darkmode-border hover:bg-primary/5 transition-colors"
+             rounded border border-border p-4 text-[#25D366] dark:border-darkmode-border hover:bg-[#25D366]/10 transition-colors"
               >
-                <FaUserAlt />
-                <p className="ml-1.5 text-lg font-bold text-dark dark:text-darkmode-light">
-                  {phone}
+                <FaWhatsapp className="text-3xl" />
+                <p className="ml-3 text-lg font-bold text-dark dark:text-darkmode-light">
+                  Contactez-moi sur WhatsApp
                 </p>
               </Link>
             </div>
@@ -187,11 +187,11 @@ const Contact = ({ data }) => {
               <Link
                 href={`mailto:${mail}`}
                 className="my-4 flex h-[100px] items-center justify-center
-             rounded border border-border p-4 text-primary dark:border-darkmode-border"
+             rounded border border-border p-4 text-[#EA4335] dark:border-darkmode-border hover:bg-[#EA4335]/10 transition-colors"
               >
-                <FaEnvelope />
-                <p className="ml-1.5 text-lg font-bold text-dark dark:text-darkmode-light">
-                  {mail}
+                <FaEnvelope className="text-3xl" />
+                <p className="ml-3 text-lg font-bold text-dark dark:text-darkmode-light">
+                  Envoyez-moi un E-mail
                 </p>
               </Link>
             </div>

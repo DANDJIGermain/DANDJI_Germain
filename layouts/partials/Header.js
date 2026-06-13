@@ -29,8 +29,8 @@ const Header = () => {
   }, [showMenu]);
 
   return (
-    <header className="header">
-      <nav className="navbar container px-1 sm:px-8">
+    <header className="header z-50 relative">
+      <nav className="navbar container px-1 sm:px-8 relative z-50">
         {/* Left side: Logo and Nav Menu side-by-side */}
         <div className="flex items-center lg:space-x-12">
           <div className="order-0">
@@ -39,7 +39,7 @@ const Header = () => {
           <div
             className={`collapse-menu ${
               !showMenu && "translate-x-full"
-            } lg:flex lg:translate-x-0`}
+            } lg:flex lg:translate-x-0 bg-body dark:bg-darkmode-body z-50`}
           >
             <button
               className="absolute right-6 top-11 lg:hidden"
@@ -84,6 +84,7 @@ const Header = () => {
                           >
                             <Link
                               href={child.url}
+                              onClick={() => setShowMenu(false)}
                               className={`nav-dropdown-link block ${
                                 (router.asPath === child.url || router.asPath === child.url + "/") && "active"
                               }`}
@@ -98,6 +99,7 @@ const Header = () => {
                     <li className="nav-item">
                       <Link
                         href={menu.url}
+                        onClick={() => setShowMenu(false)}
                         className={`nav-link block ${
                           (router.asPath === menu.url || router.asPath === menu.url + "/") && "active"
                         }`}
@@ -117,7 +119,7 @@ const Header = () => {
         </div>
 
         {/* Right side: Utilities (theme, language, mobile toggle) */}
-        <div className="flex items-center space-x-4">
+        <div className="flex items-center space-x-1 md:space-x-2">
           <ThemeSwitcher />
           {/* Language Switcher replaces Search */}
           <LanguageSwitcher />
@@ -143,7 +145,7 @@ const Header = () => {
         </div>
       </nav>
       {showMenu && (
-        <div className="header-backdrop absolute top-0 left-0 h-[100vh] w-full bg-black/50 lg:hidden"></div>
+        <div className="header-backdrop absolute top-0 left-0 h-[100vh] w-full bg-black/50 lg:hidden z-40" onClick={() => setShowMenu(false)}></div>
       )}
     </header>
   );

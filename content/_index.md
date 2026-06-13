@@ -2,7 +2,7 @@
 banner:
   title: Bienvenue **!**
   title_small: "sur le portfolio de Germain DANDJI"
-  content: Je suis un développeur passionné par la création de solutions numériques innovantes. Découvrez mes projets et mon univers.
+  content: Je suis un ingénieur **DevSecOps** passionné par la création de solutions numériques innovantes. Découvrez mes projets et mon univers.
   image_enable: true
   image: /images/germain_vide.png
   button:

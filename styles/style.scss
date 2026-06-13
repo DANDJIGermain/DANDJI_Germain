@@ -15,3 +15,25 @@
 @layer utilities {
   @import "utilities";
 }
+
+/* Hide Google Translate UI elements */
+.goog-te-banner-frame.skiptranslate, 
+.goog-te-gadget-icon, 
+.goog-te-gadget-simple, 
+#goog-gt-tt, 
+.goog-tooltip,
+.goog-te-spinner-pos,
+#google_translate_element {
+  display: none !important;
+}
+
+body {
+  top: 0px !important;
+  position: relative !important;
+}
+
+/* Hide the hover tooltip from google translate on original text */
+font {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}

@@ -46,6 +46,10 @@ certificates:
       image_back: /images/certificates/google-cloud.png
 ---
 
-En tant que développeur, entrepreneur, chercheur, innovateur, ingénieur en genie logicielle et créatif, ma passion est de transformer des idées complexes en solutions logicielles élégantes, performantes et centrées sur l'utilisateur. Je suis particulièrement attiré par les défis techniques exigeants où l'optimisation des performances et la qualité du code sont primordiales. Mon objectif est de créer des expériences numériques fluides, intuitives et fiables qui répondent aux besoins réels des utilisateurs tout en respectant les meilleures pratiques de développement.
+Passionné par l'innovation technologique, je conçois des architectures robustes et des solutions logicielles sur-mesure. En tant qu'ingénieur **DevSecOps**, mon approche repose sur trois piliers essentiels :
 
-Je suis convaincu que le développement logiciel est un art qui allie rigueur technique, créativité et souci du détail. J'aime explorer de nouvelles technologies, expérimenter différentes approches et continuellement améliorer mes compétences pour offrir des solutions innovantes et adaptées aux besoins de mes clients. Je crois en l'importance de la collaboration, de la communication transparente et du travail d'équipe pour atteindre des résultats exceptionnels.
+- **Je développe** des applications web et mobile modernes et performantes.
+- **J'automatise** les processus d'intégration et de déploiement (CI/CD) pour gagner en rapidité.
+- **Je sécurise** chaque ligne de code et chaque infrastructure serveur.
+
+Mon objectif est simple : transformer vos défis techniques en résultats concrets, évolutifs et inviolables.
