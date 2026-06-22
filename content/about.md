@@ -46,7 +46,7 @@ certificates:
       image_back: /images/certificates/google-cloud.png
 ---
 
-Passionné par l'innovation technologique, je conçois des architectures robustes et des solutions logicielles sur-mesure. En tant qu'ingénieur **DevSecOps**, mon approche repose sur trois piliers essentiels :
+Passionné par l'innovation technologique, je conçois des architectures robustes et des solutions logicielles sur-mesure. Avec **plus de 3 ans d'expérience** en tant qu'ingénieur **DevSecOps**, mon approche repose sur trois piliers essentiels :
 
 - **Je développe** des applications web et mobile modernes et performantes.
 - **J'automatise** les processus d'intégration et de déploiement (CI/CD) pour gagner en rapidité.
